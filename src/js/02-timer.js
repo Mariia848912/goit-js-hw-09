@@ -22,16 +22,12 @@ class Countdown {
         minutes: Countdown.addLeadingZero(minutes),
         seconds: Countdown.addLeadingZero(seconds),
       });
-      //   console.log(delta);
-      //   console.log('текущая дата', Date.now());
-      //  console.log(convertMs(delta));
-      // convertMs(delta);
+     
     } else {
       this.stop();
     }
   }
   start(choseDate) {
-    // console.log('выбранная дата', choseDate);
     this.#calculateData(choseDate);
     this.#intervalId = setInterval(() => this.#calculateData(choseDate), 1000);
   }
@@ -76,7 +72,6 @@ let choseDate = 0;
 
 disabledStartBtn();
 
-// console.log(date);
 
 const options = {
   enableTime: true,
@@ -90,8 +85,7 @@ const options = {
     } else {
       activeStartBtn();
       choseDate = Number(selectedDates[0]);
-      // stop()
-      //   console.log(Number(selectedDates[0]));
+     
     }
   },
 };
@@ -149,5 +143,3 @@ function onCountdownChange({ days, hours, minutes, seconds }) {
   defaultDate: new Date() - Устанавливает начальную выбранную дату (даты).
   minuteIncrement - Регулирует шаг ввода минут (включая прокрутку)
 */
-// console.log('1', new Date().getTime());
-// console.log('2', Date.now());

@@ -13,7 +13,6 @@ function onFormSubmit(evt) {
     elements: { delay, step, amount },
   } = evt.currentTarget;
 
-  // С INPUT возвращается СТРОКА!!!!!!!!!!!!!!!!
   const delayValue = Number(delay.value);
   const stepValue = Number(step.value);
   const amountValue = Number(amount.value);

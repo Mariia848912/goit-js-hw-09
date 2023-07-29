@@ -7,7 +7,6 @@ const refs = {
 
 refs.startBt.addEventListener('click', onStartBtnClick);
 refs.stopBt.addEventListener('click', onStopBtnClick);
-// refs.stopBt.setAttribute('disabled', '');
 disabledStopBtn();
 
 function onStartBtnClick() {
